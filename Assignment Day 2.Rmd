@@ -1,0 +1,49 @@
+
+
+```{r}
+Master_2
+```
+
+
+
+
+```{r}
+Master_2 %>%
+  ggplot(aes(x = Poverty_Gap_Index.P1)) +
+  geom_density()
+```
+```{r}
+Master_2 %>%
+  ggplot(aes(x = Poverty_Gap_Index.P1)) +
+  geom_density(aes(fill = factor(Province)), alpha = 0.2)
+```
+
+
+```{r}
+Master_2 %>%
+  ggplot(aes(x = Poverty_Gap_Index.P1)) +
+  geom_density(aes(fill = factor(Province)), alpha = 0.2) + 
+  scale_x_log10()+
+  labs(subtitle="Poverty Distribution\nPoverty Distribution of Regions in Indonesia",
+       caption="Data Source: https://www.bps.go.id/",
+       y = "Density",
+       x = "Regional Poverty Gap Index")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
